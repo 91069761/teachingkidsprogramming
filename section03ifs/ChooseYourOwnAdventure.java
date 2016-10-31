@@ -33,32 +33,34 @@ public class ChooseYourOwnAdventure
   }
   private static void endStory()
   {
-    MessageBox.showMessage(" If you don't know how to read directions. You can't play this game. The end.");
+    //      ------------- Recipe for endStory --#6.2
+    MessageBox.showMessage("You don't know how to read directions. You can't play this game. The end.");
+    //      ------------- End of endStory recipe --#6.3
   }
   private static void approachOoze()
   {
+    //      ------------- Recipe for approachOoze --#4.2
     MessageBox.showMessage(
         "You approach a glowing, green bucket of ooze. Worried that you will get in trouble, you pick up the bucket.");
-    String answer = MessageBox.askForTextInput("Do you want to pour the ooze into the 'backyard' or 'toilet'?");
+    String toiletOrBackyard = MessageBox
+        .askForTextInput("Do you want to pour the ooze into the 'backyard' or 'toilet'?");
     //         If they answer "toilet" --#8.1
-    if (answer == "toilet")
+    if (toiletOrBackyard == "toilet")
     {
       //            pourIntoToilet (recipe below) --#12.1
       //            ------------- Recipe for pourIntoToilet --#12.2
       //               Tell the user "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste." --#10
-      MessageBox.showMessage(
-          "As you pour the ooze into the toilet it backs up, gurgles, and explodes, covering you in radioactive waste.");
       //               Ask the user "Do you want to train to be a NINJA?  'Yes' or 'HECK YES'?" --#11
       //               If they answer "yes" --#13.1
       //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#14
+      //               Otherwise, if they answer "heck yes" --#13.2
+      //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
+      //               Otherwise, if they answer anything else --#13.3
+      //                    endStory --#16
+      //            ------------- End of pourIntoToilet recipe --#12.3
     }
-    //               Otherwise, if they answer "heck yes" --#13.2
-    //                    Tell the user "Awesome dude!  You live out the rest of your life fighting crimes and eating pizza!" --#15
-    //               Otherwise, if they answer anything else --#13.3
-    //                    endStory --#16
-    //            ------------- End of pourIntoToilet recipe --#12.3
     //         Otherwise, if they answer "backyard" --#8.2
-    else if (answer == "backyard")
+    else if (toiletOrBackyard == "backyard")
     {
       //            pourIntoBackyard (recipe below) --#19.1
       //            ------------- Recipe for pourIntoBackyard --#19.2
@@ -72,16 +74,19 @@ public class ChooseYourOwnAdventure
       //                    endStory --#23
       //         ------------- End of pourIntoBackyard recipe --#19.3
     }
-    //         Otherwise, if they answer anything else --#8.3
     else
     {
-      endStory();
+      //         Otherwise, if they answer anything else --#8.3
       //            endStory --#9
     }
+    //      ------------- End of approachOoze recipe --#4.3
   }
   private static void wakeUp()
   {
+    //          ------------- Recipe for wakeUp --#2.2
+    //              Tell the user "You wake up and have a boring day. The end." --#1
     MessageBox.showMessage("You woke up and had a boring day. The end.");
+    //          ------------- End of wakeUp recipe --#2.3
   }
   private static void animateStartStory()
   {

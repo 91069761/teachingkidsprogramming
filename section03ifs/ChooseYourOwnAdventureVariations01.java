@@ -7,22 +7,23 @@ import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 import org.teachingextensions.logo.utils.EventUtils.MessageBox;
 
-public class ChooseYourOwnAdventure
+public class ChooseYourOwnAdventureVariations01
 {
+  //    click the run button after every line of code you complete
   public static void main(String[] args)
   {
     startStory();
   }
   private static void startStory()
   {
-    tellMoreStory("One morning the Tortoise woke up in a dream.");
+    tellMoreStory("One morning the Tortoise was walking down the street.");
     animateStartStory();
-    String action = askAQuestion("Do you want to 'wake up' or 'explore' the dream?");
-    if ("wake up".equalsIgnoreCase(action))
+    String action = askAQuestion("Do you want to 'go home' or 'continue walking'?");
+    if ("go home".equalsIgnoreCase(action))
     {
-      wakeUp();
+      goHome();
     }
-    else if ("explore".equalsIgnoreCase(action))
+    else if ("continue walking".equalsIgnoreCase(action))
     {
       approachOoze();
     }
@@ -92,14 +93,14 @@ public class ChooseYourOwnAdventure
       endStory();
     }
   }
-  private static void wakeUp()
+  private static void goHome()
   {
-    MessageBox.showMessage("You woke up and had a boring day. The end.");
+    MessageBox.showMessage("You reach home, and find all your belongings are gone!");
   }
   private static void animateStartStory()
   {
     Tortoise.show();
-    Color color = PenColors.Grays.Black;
+    Color color = PenColors.Greens.DarkCyan;
     for (int i = 0; i < 25; i++)
     {
       Tortoise.getBackgroundWindow().setColor(color);

@@ -31,7 +31,7 @@ public class PyramidsOfGiza
     Tortoise.setSpeed(10);
     Tortoise.getBackgroundWindow().setBackground(PenColors.Blues.AliceBlue);
     Tortoise.setPenColor(PenColors.Yellows.DarkGoldenrod);
-    Tortoise.setPenWidth(20);
+    Tortoise.setPenWidth(10);
     Tortoise.hide();
   }
 }

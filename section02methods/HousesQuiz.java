@@ -10,16 +10,15 @@ public class HousesQuiz extends HousesQuizAdapter
   {
     // Question 1 
     //   small (recipe below) 
-    small();
+    large();
     //
     //   Question2
     //   medium (recipe below) 
-    medium();
+    large();
     //
     //   Question3
     //   large (recipe below) 
     large();
-    drawASide();
     //
     //   Question6
     //   drawASide (recipe below) 

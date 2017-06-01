@@ -14,7 +14,7 @@ public class Variations02_BubbleRoof
   public static void main(String[] args)
   {
     VirtualProctor.setClassName("Palm Digital");
-    VirtualProctor.setName("Hunter & Samuel");
+    VirtualProctor.setName("Hunter & Isaiah");
     Tortoise.show();
     Tortoise.setSpeed(10);
     Tortoise.getBackgroundWindow().setBackground(PenColors.Grays.DarkGray);

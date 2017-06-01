@@ -10,8 +10,8 @@ public class DoubleLoop
   public static void main(String[] args)
   {
     Tortoise.show();
-    Tortoise.setX(225);
-    Tortoise.setY(150);
+    Tortoise.setX(250);
+    Tortoise.setY(230);
     Tortoise.setSpeed(10);
     ColorWheel.addColor(PenColors.Reds.Crimson);
     ColorWheel.addColor(PenColors.Reds.DarkRed);

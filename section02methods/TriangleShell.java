@@ -9,7 +9,7 @@ public class TriangleShell
   private static int length = 1;
   public static void main(String[] args)
   {
-    Tortoise.setPenWidth(10);
+    Tortoise.setPenWidth(5);
     // Show the tortoise --#1
     Tortoise.show();
     // Make the tortoise go as fast as possible --#6

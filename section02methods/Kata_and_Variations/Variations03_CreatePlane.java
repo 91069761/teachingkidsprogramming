@@ -7,7 +7,7 @@ public class Variations03_CreatePlane
 {
   public static void main(String[] args) throws Exception
   {
-    Tortoise.show();
+    Tortoise.hide();
     Tortoise.setSpeed(8);
     Tortoise.setPenColor(PenColors.Oranges.DarkOrange);
     Tortoise.setX(100);

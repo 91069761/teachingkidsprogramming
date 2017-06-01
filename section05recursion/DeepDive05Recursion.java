@@ -24,7 +24,7 @@ public class DeepDive05Recursion
   @Test
   public void changeThePointerToAHand() throws Exception
   {
-    Tortoise.getBackgroundWindow().___();
+    Tortoise.getBackgroundWindow().setCursor(Cursor.HAND_CURSOR);
     Assert.assertEquals(getCursor(), Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
   }
   @Test
@@ -75,7 +75,7 @@ public class DeepDive05Recursion
   public void whatIsLastNow() throws Exception
   {
     List<String> messages = Arrays.asList("Hello", "World!", "How", "Are", "You");
-    messages.set(4, "");
+    messages.set(4, "The rest of them");
     String result = messages.get(4);
     Assert.assertEquals("The rest of them", result);
   }

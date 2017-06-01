@@ -13,14 +13,12 @@ public class QuickShape
     Tortoise.show();
     Tortoise.setX(150);
     Tortoise.setSpeed(7);
-    //  Tip: Use the Tortoise object to draw shapes!
     for (int i = 0; i < 4; i++)
     {
       Tortoise.setPenWidth(2);
       Tortoise.move(50);
       Tortoise.turn(90);
     }
-    //
     Tortoise.setX(425);
     for (int i = 0; i < 5; i++)
     {
@@ -29,12 +27,11 @@ public class QuickShape
       Tortoise.move(65);
       Tortoise.turn(75);
     }
-    //
     Tortoise.setX(250);
     Tortoise.setY(375);
     Random r = new Random();
     int sides = r.nextInt(10) + 1;
-    //  Draw a purple shape that is 50 pixel on each side with a line that's 10 pixels thick -- #3
+    Tortoise.drawShape(8, PenColors.Purples.Purple, 50, 10);
     for (int i = 0; i < 36; i++)
     {
       Tortoise.setPenColor(PenColors.Purples.Purple);
@@ -42,7 +39,5 @@ public class QuickShape
       Tortoise.move(20);
       Tortoise.turn(10);
     }
-    //
   }
-  //    See "your" work at http://virtualproctor.tkpjava.org
 }

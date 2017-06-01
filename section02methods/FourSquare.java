@@ -17,14 +17,11 @@ public class FourSquare
   }
   private static void drawSquare()
   {
-    //      drawSquare (recipe below) --#6.1
-    //      ------------- Recipe for drawSquare --#6.2
     for (int i = 0; i < 4; i++)
     {
       Tortoise.setPenColor(PenColors.getRandomColor());
       Tortoise.move(50);
       Tortoise.turn(90);
     }
-    //      ------------- End of drawSquare recipe --#6.3
   }
 }
